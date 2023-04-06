@@ -9,7 +9,7 @@ for (const box of boxes) {
     box.addEventListener('click', function () {
         box.innerText = --num;
         if(num == 0) {
-            box.addEventListener('click', deleteBox);
+            deleteBox() ;
         }  
     });
  
